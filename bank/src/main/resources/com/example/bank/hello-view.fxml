@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bank.HelloController">
+   <children>
+      <TableView fx:id="moneyT" layoutX="218.0" layoutY="51.0" prefHeight="265.0" prefWidth="337.0">
+        <columns>
+          <TableColumn fx:id="dateTc" prefWidth="75.0" text="fecha" />
+          <TableColumn fx:id="amountTc" prefWidth="75.0" text="monto" />
+            <TableColumn fx:id="typeTc" prefWidth="75.0" text="tipo" />
+            <TableColumn fx:id="descTc" prefWidth="111.0" text="descripcion" />
+        </columns>
+      </TableView>
+      <TextField fx:id="earnTxt" editable="false" layoutX="406.0" layoutY="326.0" />
+      <TextField fx:id="spentTxt" editable="false" layoutX="406.0" layoutY="358.0" />
+      <TextField fx:id="balanceTxt" editable="false" layoutX="406.0" layoutY="391.0" />
+      <Label layoutX="303.0" layoutY="330.0" text="Dinero ganado" />
+      <Label layoutX="303.0" layoutY="362.0" text="Dinero gastado" />
+      <Label layoutX="307.0" layoutY="395.0" text="Balance" />
+      <Button fx:id="addBtn" layoutX="101.0" layoutY="171.0" mnemonicParsing="false" onAction="#addRegister" text="Agregar registro" />
+      <Label layoutX="343.0" layoutY="21.0" text="INGRESOS/GASTOS" />
+      <Button fx:id="deleteBtn" layoutX="101.0" layoutY="206.0" mnemonicParsing="false" onAction="#deleteRegister" text="Eliminar registro" />
+      <ChoiceBox fx:id="filterCb" layoutX="38.0" layoutY="101.0" prefWidth="150.0" />
+      <Label layoutX="46.0" layoutY="33.0" prefHeight="37.0" prefWidth="135.0" text="BANCO ALFA">
+         <font>
+            <Font name="Rockwell Extra Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
